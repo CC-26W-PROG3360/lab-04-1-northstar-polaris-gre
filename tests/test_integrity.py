@@ -2,6 +2,7 @@ import unittest
 from engine.router import GlobalRoutingEngine
 from engine.telemetry import TelemetrySystem, process_coordinates
 
+
 class TestNorthstarIntegrity(unittest.TestCase):
     def test_battery_safety(self):
         engine = GlobalRoutingEngine()
@@ -20,5 +21,6 @@ class TestNorthstarIntegrity(unittest.TestCase):
         except Exception as e:
             self.fail(f"CRITICAL ERROR: Telemetry processing failed: {e}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()
